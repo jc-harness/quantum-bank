@@ -1,0 +1,9 @@
+service:
+  name: quantum bank backend service
+  identifier: quantum_bank_backend_service
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
+  orgIdentifier: default
+  projectIdentifier: jcproject
