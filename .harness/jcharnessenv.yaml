@@ -1,0 +1,8 @@
+environment:
+  name: jc-harness-env
+  identifier: jcharnessenv
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: jcproject
