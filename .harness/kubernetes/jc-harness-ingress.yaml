@@ -15,6 +15,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: jc-harness
+                name: jc-harness-quantum-bank-backend-deployment-service
                 port:
                   number: 81  
