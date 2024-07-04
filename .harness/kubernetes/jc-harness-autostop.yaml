@@ -2,7 +2,7 @@ apiVersion: ccm.harness.io/v1
 kind: AutoStoppingRule
 metadata:
   name: jc-harness-custom
-  namespace: johnc
+  namespace: luisredda
   annotations:
     harness.io/cloud-connector-id: GCP_SE_Account
 spec:
