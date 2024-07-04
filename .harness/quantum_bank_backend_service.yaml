@@ -3,7 +3,24 @@ service:
   identifier: quantum_bank_backend_service
   serviceDefinition:
     type: Kubernetes
-    spec: {}
+    spec:
+      manifests:
+        - manifest:
+            identifier: quantumbankbackend
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: jcgithubconnector
+                  gitFetchType: Branch
+                  paths:
+                    - .harness/kubernetes/jc-harness-quantum-bank-backend-deployment.yaml
+                    - .harness/kubernetes/ja-harness-quantum-bank-backend-service.yaml
+                  repoName: quantum-bank
+                  branch: main
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
   gitOpsEnabled: false
   orgIdentifier: default
   projectIdentifier: jcproject
