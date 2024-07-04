@@ -1,0 +1,16 @@
+apiVersion: ccm.harness.io/v1
+kind: AutoStoppingRule
+metadata:
+  name: jc-harness-custom
+  namespace: johnc
+  annotations:
+    harness.io/cloud-connector-id: GCP_SE_Account
+spec:
+  service:
+    name: jc-harness-quantum-bank-backend-deployment-service
+    port: 81
+  ingress:
+    name: jc-harness-ingress
+    controllerName: nginx
+  idleTimeMins: 15
+  hideProgressPage: false
