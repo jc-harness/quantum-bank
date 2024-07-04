@@ -21,6 +21,8 @@ spec:
       containers:
       - name: quantum-bank-backend
         image: {{.Values.image}}  
+        ports:
+        - containerPort: 80
         imagePullPolicy: "Always"
         resources:
           requests:
