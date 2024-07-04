@@ -17,6 +17,8 @@ service:
                   paths:
                     - .harness/kubernetes/jc-harness-quantum-bank-backend-deployment.yaml
                     - .harness/kubernetes/jc-harness-quantum-bank-backend-service.yaml
+                    - .harness/kubernetes/jc-harness-ingress.yaml
+                    - .harness/kubernetes/jc-harness-autostop.yaml
                   repoName: quantum-bank
                   branch: main
               valuesPaths:
