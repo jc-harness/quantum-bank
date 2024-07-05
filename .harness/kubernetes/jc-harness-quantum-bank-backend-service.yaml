@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: jc-harness-quantum-bank-backend-deployment-service
-  namespace: luisredda
+  namespace: johnc
   annotations:
     cloud.google.com/neg: '{"ingress":true}'
 spec:
