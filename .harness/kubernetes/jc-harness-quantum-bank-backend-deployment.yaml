@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jc-harness-quantum-bank-backend-deployment
-  namespace: luisredda
+  namespace: hsaab
 spec:
   replicas: 1
   selector:
@@ -21,8 +21,6 @@ spec:
       containers:
       - name: quantum-bank-backend
         image: {{.Values.image}}  
-        ports:
-        - containerPort: 80
         imagePullPolicy: "Always"
         resources:
           requests:
